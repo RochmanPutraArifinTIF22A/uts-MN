@@ -13,11 +13,11 @@ Soal
 
 Jawaban
 
-def f(x):
-    return x**3 - x - 1
+    def f(x):
+        return x**3 - x - 1
 
-def bisection(a, b, tol, max_iter):
-    iterasi = 1
+    def bisection(a, b, tol, max_iter):
+        iterasi = 1
 
     print("Iterasi |   a\t\t|   b\t\t|   c\t\t|   f(c)")
     print("-" * 50)
@@ -39,19 +39,19 @@ def bisection(a, b, tol, max_iter):
 
     return None  # Jika iterasi melebihi batas maksimum
 
-# Tentukan nilai awal, toleransi, dan iterasi maksimum
-a_biseksi = 0
-b_biseksi = 2
-toleransi_biseksi = 1e-6
-iterasi_maksimum_biseksi = 1000
+    # Tentukan nilai awal, toleransi, dan iterasi maksimum
+    a_biseksi = 0
+    b_biseksi = 2
+    toleransi_biseksi = 1e-6
+    iterasi_maksimum_biseksi = 1000
 
-# Panggil fungsi bisection
-solusi_biseksi = bisection(a_biseksi, b_biseksi, toleransi_biseksi, iterasi_maksimum_biseksi)
+    # Panggil fungsi bisection
+    solusi_biseksi = bisection(a_biseksi, b_biseksi, toleransi_biseksi, iterasi_maksimum_biseksi)
 
-if solusi_biseksi is not None:
-    print("\nSolusi Metode Biseksi: {:.6f}".format(solusi_biseksi))
-else:
-    print("\nMetode Biseksi tidak konvergen.")
+    if solusi_biseksi is not None:
+        print("\nSolusi Metode Biseksi: {:.6f}".format(solusi_biseksi))
+    else:
+        print("\nMetode Biseksi tidak konvergen.")
 
 
 
